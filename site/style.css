@@ -16,13 +16,23 @@
     margin: auto;
     padding: 20px;
   }
+
+  .logo{
+    display: flex;
+  }
+
+  .logo img{
+    width: 150px;
+    height: 150px;
+  }
   
   
   .cabecalho {
-    background-color: #0a9d4c;
+    background-color: #045428;
     color: white;
     padding: 40px 0;
     text-align: center;
+    border-radius: 0px 0px 20px 20px ;
   }
   
   .cabecalho h1 {
@@ -35,7 +45,7 @@
   }
   
   section h2 {
-    color: #46c277;
+    color: #0adb5e;
     margin-bottom: 15px;
   }
   
