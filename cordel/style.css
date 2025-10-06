@@ -12,14 +12,15 @@
 
 *{
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     font-size: 1em;
 
 }
  html,body{
     min-height: 100vh;
-    background-color: rgb(174, 225, 255);
+    background-color: rgb(169, 242, 250);
     font-family: var(--fonte1);
+    
  }
  
  header{
@@ -55,5 +56,13 @@
     line-height: 2em;
     padding-left:30px ;
     font-family: var(--fonte3);
+ }
+
+ section>p{
+   padding-bottom: 2em;
    
+ }
+
+ section#img01{
+   background-image: url();
  }
