@@ -77,7 +77,7 @@
   
   
   .beneficio {
-    background-color: #ecdaaf;
+    background-color: #efe2c1;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.455);
     padding: 20px;
     border-radius: 8px;
@@ -95,4 +95,13 @@
     margin-top: 40px;
     
   }
+   
+  div>h3{
+    color: #2e8a52;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.285);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+
+  }
+  
   
