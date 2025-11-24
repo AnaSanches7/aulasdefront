@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last of Us – História Completa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---------------- RESET ---------------- */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Roboto', sans-serif;}
+body {background:#111; color:#eee; transition:0.3s; scroll-behavior:smooth;}
+a {text-decoration:none; color:inherit;}
+img {max-width:100%; border-radius:10px;}
+
+/* ---------------- NAVBAR ---------------- */
+header {
+    position:fixed; top:0; width:100%; z-index:1000;
+    background:rgba(0,0,0,0.85); backdrop-filter:blur(10px);
+    display:flex; justify-content:space-between; align-items:center;
+    padding:15px 50px;
+}
+header .logo {font-size:24px; font-weight:bold;}
+header nav a {margin-left:25px; font-weight:500; color:#ccc; transition:0.3s;}
+header nav a:hover {color:#4caf50;}
+.toggle-btn {cursor:pointer; padding:8px 18px; border:1px solid #4caf50; border-radius:8px; color:#4caf50; margin-left:20px; transition:0.3s;}
+.toggle-btn:hover {background:#4caf50; color:#000;}
+
+/* ---------------- HERO ---------------- */
+#hero {
+    height:100vh; display:flex; justify-content:center; align-items:center; text-align:center;
+    background: url('https://wallpapercave.com/wp/wp6605353.jpg') center/cover no-repeat; position: relative;
+}
+#hero::after {
+    content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.6);
+}
+#hero .content {position:relative; z-index:1; color:#fff; padding:0 20px;}
+#hero h1 {font-size:50px; margin-bottom:20px; animation:fadeIn 2s ease;}
+#hero p {font-size:22px; max-width:700px; margin:auto; animation:fadeIn 2s ease;}
+
+@keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+
+/* ---------------- SEÇÕES ---------------- */
+section {padding:100px 10%; max-width:1200px; margin:auto;}
+section h2 {font-size:36px; margin-bottom:25px; color:#4caf50;}
+section p {font-size:18px; line-height:1.8; margin-bottom:20px; color:#ddd; text-align:justify;}
+
+/* ---------------- CARDS ---------------- */
+.cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; margin-top:40px;}
+.card {background:#222; padding:25px; border-radius:12px; border:1px solid #333; transition:0.3s; cursor:pointer;}
+.card:hover {transform:translateY(-5px); border-color:#4caf50;}
+.card img {width:100%; margin-bottom:15px;}
+
+/* ---------------- GALERIA ---------------- */
+.gallery {display:flex; flex-wrap:wrap; gap:15px; margin-top:40px;}
+.gallery img {width:calc(33% - 10px); transition:0.3s; cursor:pointer;}
+.gallery img:hover {transform:scale(1.05);}
+
+/* ---------------- FOOTER ---------------- */
+footer {text-align:center; padding:35px; background:#000; color:#aaa; margin-top:50px;}
+
+/* ---------------- RESPONSIVO ---------------- */
+@media(max-width:768px){
+    header {flex-direction:column; gap:10px;}
+    .gallery img {width:calc(50% - 10px);}
+}
+@media(max-width:480px){
+    #hero h1 {font-size:36px;}
+    #hero p {font-size:18px;}
+    .gallery img {width:100%;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">The Last of Us</div>
+    <nav>
+        <a href="#history">História</a>
+        <a href="#objectives">Objetivos</a>
+        <a href="#characters">Personagens</a>
+        <a href="#facts">Fatos</a>
+        <a href="#gallery">Galeria</a>
+        <span class="toggle-btn" onclick="toggleMode()">Modo Claro/Escuro</span>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="content">
+        <h1>The Last of Us</h1>
+        <p>Um mundo devastado por uma pandemia, onde sobrevivência, escolhas e laços humanos definem o destino.</p>
+    </div>
+</section>
+
+<!-- HISTÓRIA -->
+<section id="history">
+    <h2>História</h2>
+    <p><strong>The Last of Us – Parte I:</strong> Joel é um sobrevivente endurecido, marcado por tragédias. Ele recebe a missão de escoltar Ellie, uma adolescente que pode conter a chave para uma cura, através de um mundo devastado por um fungo mortal que transforma humanos em criaturas violentas. A narrativa combina sobrevivência extrema, exploração de cidades abandonadas e relacionamentos humanos complexos. Joel e Ellie enfrentam tanto os infectados quanto facções hostis, forjando um vínculo profundo que desafia os conceitos de moralidade e família.</p>
+    <p><strong>The Last of Us – Parte II:</strong> A história continua anos depois, explorando os efeitos do trauma e da vingança. Ellie agora busca justiça pessoal por eventos traumáticos, enquanto a narrativa alterna perspectivas, incluindo Abby, uma nova personagem que apresenta outra visão sobre os acontecimentos. O jogo aprofunda o dilema moral, mostrando que ações têm consequências, e que o mundo pós-apocalíptico não tem heróis ou vilões absolutos.</p>
+</section>
+
+<!-- OBJETIVOS -->
+<section id="objectives">
+    <h2>Objetivos</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/6c/7b/3d/6c7b3d2b8f6f1a8e0c52a1b6dc0984c5.jpg" alt="Sobrevivência">
+            <h3>Sobrevivência</h3>
+            <p>Enfrente os infectados e facções hostis, gerencie recursos limitados e tome decisões estratégicas para sobreviver em ambientes perigosos e imprevisíveis.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/f9/0a/8c/f90a8c9b3d7e4a13b2edc5e0f763e2a8.jpg" alt="Exploração">
+            <h3>Exploração</h3>
+            <p>Explore cidades destruídas, florestas e edifícios abandonados, descobrindo segredos, recursos, armas e informações sobre o mundo pós-apocalíptico.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/ab/c3/54/abc354ab2f6c5b1f62cd3e5a0459e8d2.jpg" alt="Laços Humanos">
+            <h3>Laços Humanos</h3>
+            <p>Crie conexões emocionais com personagens centrais e secundários, cuja lealdade, confiança e decisões impactam diretamente a narrativa.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PERSONAGENS -->
+<section id="characters">
+    <h2>Personagens Principais</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/64/25/3f/64253f8a6aef7c6765f0f48f60b3e7cb.jpg" alt="Joel">
+            <h3>Joel</h3>
+            <p>Um homem endurecido pelo sofrimento, protetor de Ellie e capaz de decisões moralmente ambíguas para garantir a sobrevivência e a segurança daqueles que ama.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/ea/2f/5c/ea2f5c7f25b70b2e56e1d3f93bdbd2b7.jpg" alt="Ellie">
+            <h3>Ellie</h3>
+            <p>Adolescente corajosa e determinada, com uma natureza curiosa e rebelde. Sua jornada é marcada pelo crescimento emocional, vingança e exploração de sua própria moralidade.</p>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/9d/1f/2b/9d1f2b3b28e39d4b12c67d2e2b8e3f7d.jpg" alt="Abby">
+            <h3>Abby</h3>
+            <p>Protagonista da Parte II, uma personagem complexa que oferece uma perspectiva diferente sobre justiça e vingança, mostrando que o mundo é moralmente cinza.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FATOS IMPORTANTES -->
+<section id="facts">
+    <h2>Fatos Interessantes</h2>
+    <p>O universo de The Last of Us é rico em detalhes: cada ambiente conta uma história, cada personagem tem um passado profundo. Curiosidades incluem: o uso realista de armas e munições, a atenção aos detalhes na animação facial, a música emocional que acompanha cada momento e as múltiplas formas de abordar conflitos.</p>
+    <p>Além disso, o jogo aborda temas de saúde mental, luto, violência e moralidade, tornando-o uma experiência narrativa intensa e envolvente.</p>
+</section>
+
+<!-- GALERIA -->
+<section id="gallery">
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery">
+        <img src="https://wallpapercave.com/wp/wp6605353.jpg" alt="Cena 1">
+        <img src="https://wallpapercave.com/wp/wp6605360.jpg" alt="Cena 2">
+        <img src="https://wallpapercave.com/wp/wp6605362.jpg" alt="Cena 3">
+        <img src="https://wallpapercave.com/wp/wp6605363.jpg" alt="Cena 4">
+        <img src="https://wallpapercave.com/wp/wp6605365.jpg" alt="Cena 5">
+        <img src="https://wallpapercave.com/wp/wp6605367.jpg" alt="Cena 6">
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 – Site criado com ❤️ por você.
+</footer>
+
+<!-- SCRIPT MODO ESCURO -->
+<script>
+function toggleMode(){
+    document.body.classList.toggle("light");
+    if(document.body.classList.contains("light")){
+        document.body.style.background="#f5f5f5";
+        document.body.style.color="#111";
+    }else{
+        document.body.style.background="#111";
+        document.body.style.color="#eee";
+    }
+}
+</script>
+
+</body>
+</html>
